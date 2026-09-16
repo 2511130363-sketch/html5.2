@@ -1,47 +1,185 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Portafolio | Treezy Vilca Dipaz</title>
+
+    <!-- Conexión con CSS -->
     <link rel="stylesheet" href="Vilca.CSS">
 </head>
-<body>
-    <h1>CSS Título</h1>
-    <p>CSS con el selector de párrafo</p>
-</body>
-</html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
-<head>
-    <body>
-   <h1 style="color:brown;text-align:center">Treezy Vilca Dipaz</h1>
-   <p style="color:blueviolet;text-align:right">Sobre mi</p>
-</body>
-    <h1>Sobre mi</h1>
-       <nav>
-        <ul>
-            <li><a href="">Enlace 1</a></li>
-            <li><a href="">Enlace 2</a></li>
-            <li><a href="">Enlace 3</a></li>
-            <li><a href="">Enlace 4</a></li>
-        </ul>
-       </nav>
-    <h1 style="color:cadetblue; text-align">Proyectos</h1>
-    <h1>Contacto</h1>
+
 <body>
 
-    <h1 style="color:blueviolet;text-align:center">Treezy Vilca Dipaz</h1>
-    <h1>Sobre mi</h1>
-       <nav>
-        <ul>
-            <li><a href="">Enlacce 1</a></li>
-            <li><a href="">Enlace 2</a></li>
-            <li><a href="">Enlace 3</a></li>
-            <li><a href="">Enlace 4</a></li>
-        </ul>
-       </nav>
-    <h1 style="color:cadetblue; text-align">Proyectos</h1>
-    <h1>Contacto</h1>
+    <header>
+        <h1>Treezy Vilca Dipaz</h1>
+
+        <p class="subtitulo">
+            Estudiante de Ingeniería de Sistemas
+        </p>
+
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#selectores">Selectores</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="inicio" class="hero">
+            <h2>¡Hola! Soy Treezy Anjely Vilca Dipaz</h2>
+
+            <p>
+                Bienvenido a mi portafolio personal.
+                Aquí comparto mis aprendizajes, proyectos
+                y experiencias en el mundo de la tecnología.
+            </p>
+
+            <a href="#proyectos" class="boton">
+                Ver mis proyectos
+            </a>
+        </section>
+
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+
+            <p>
+                Soy estudiante de Ingeniería de Sistemas,
+                apasionada por la programación, el diseño web
+                y la creación de soluciones tecnológicas.
+            </p>
+
+            <p>
+                Me interesa seguir aprendiendo HTML, CSS,
+                JavaScript y desarrollar proyectos que
+                combinen creatividad e innovación.
+            </p>
+        </section>
+
+        <section id="proyectos">
+            <h2>Mis proyectos</h2>
+
+            <div class="proyectos-container">
+
+                <article class="proyecto">
+                    <h3>Portafolio Web</h3>
+
+                    <p>
+                        Página personal creada con HTML y CSS
+                        para mostrar mis habilidades.
+                    </p>
+
+                    <span>HTML5 | CSS3</span>
+                </article>
+
+                <article class="proyecto">
+                    <h3>Sistema de Búsqueda</h3>
+
+                    <p>
+                        Proyecto académico orientado al apoyo
+                        en la búsqueda de personas desaparecidas.
+                    </p>
+
+                    <span>Java | POO</span>
+                </article>
+
+                <article class="proyecto">
+                    <h3>Tienda Virtual</h3>
+
+                    <p>
+                        Idea de negocio para ofrecer productos
+                        educativos y creativos.
+                    </p>
+
+                    <span>Diseño | Emprendimiento</span>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="selectores">
+            <h2>Selectores CSS</h2>
+
+            <p>
+                Ejemplos de selectores utilizados en CSS.
+            </p>
+
+            <p>Selector de elemento</p>
+
+            <p class="mi-clase">
+                Selector de clase
+            </p>
+
+            <p id="mi-id">
+            </p>
+
+            <input
+                type="text"
+                placeholder="Selector de atributo"
+            >
+
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+
+            <p>
+                ¿Quieres conocer más sobre mis proyectos?
+            </p>
+
+            <form>
+                <label for="nombre">Nombre:</label>
+
+                <input
+                    type="text"
+                    id="nombre"
+                    placeholder="Treezy Vilca Dipaz"
+                >
+
+                <label for="correo">Correo:</label>
+
+                <input
+                    type="email"
+                    id="correo"
+                    placeholder="2511130363@gmail.com"
+                >
+
+                <label for="mensaje">Mensaje:</label>
+
+                <textarea
+                    id="mensaje"
+                    placeholder="Escribeme tu mensaje..."
+                ></textarea>
+
+                <button type="submit">
+                    Enviar mensaje
+                </button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            © 2026 Treezy Vilca Dipaz | Ingeniería de Sistemas
+        </p>
+        <nav>
+        <a href="index.html">INDEX</a>
+        <a href="html5.html">HTML5</a>
+        <a href="css.html">CSS</a>
+        <a href="javascript02.html">JAVASCRIPT</a>
+        <a href="https:/2511130363-sketch.github.io/PagWeb/">Mi Portafolio</a>
+        <a href="https://2511130363-sketch.github.io/Portafolio.Manual/">Mi Portafolio Manual</a>
+      </nav>
+    </footer>
+
 </body>
 </html>
