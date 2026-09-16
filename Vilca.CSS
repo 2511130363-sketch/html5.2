@@ -1,0 +1,12 @@
+body{
+            background-color:aquamarine;
+        }
+        h1{
+            color:rgb(173, 140, 96);
+            margin-right: 40px;
+        }
+        p{
+            color:rgb(81, 157, 134)
+            margin-left: 40px;
+            font-size: large;
+        };
