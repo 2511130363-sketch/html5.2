@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EmailJS</title>
+  <link rel="stylesheet" href="Api.css">
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="JavaScript.js"></script>
+</head>
+<body>
+  <span id="conexion"></span>
+ 
+<h2>Envíe su mensaje</h2>
+<p class="subtitulo">Complete el formulario y envíenos su mensaje.</p>
+
+
+  <p id="estado" hidden></p>
+
+  <form onsubmit="enviarCorreo(event)" novalidate>
+    <label>Nombre:</label><br>
+    <input type="text" id="nombre" required><br><br>
+
+    <label>Tu correo personal o institucional:</label><br>
+    <input type="email" id="email" required><br><br>
+
+    <label>Enviar a: <span class="opcional">(opcional)</span></label><br>
+    <input type="email" id="destino" placeholder="otro@correo.com"><br><br>
+
+    <label>Mensaje:</label><br>
+    <textarea id="mensaje" required></textarea><br><br>
+
+    <button type="submit" id="btn-enviar">Enviar</button>
+  </form>
+   
+</body>
+</html>

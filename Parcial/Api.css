@@ -1,0 +1,227 @@
+```css
+/* ===== ESTILOS GENERALES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+    background: linear-gradient(135deg, #e8f0f8, #f5f8fc, #dce8f2);
+}
+
+body {
+    width: calc(100% - 32px);
+    max-width: 500px;
+    margin: 55px auto;
+    padding: 38px;
+    background: rgba(255, 255, 255, 0.96);
+    border: 1px solid #e0e8f0;
+    border-radius: 22px;
+    box-shadow: 0 20px 55px rgba(24, 58, 88, 0.12);
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #24364b;
+}
+
+/* ===== INDICADOR DE CONEXIÓN ===== */
+#conexion {
+    display: block;
+    text-align: right;
+    margin-bottom: 22px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #527087;
+}
+
+/* ===== TÍTULO ===== */
+h2 {
+    margin-bottom: 10px;
+    color: #123b5d;
+    font-size: 29px;
+    font-weight: 750;
+    letter-spacing: -0.7px;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 4px;
+    margin-top: 12px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #1677b8, #52b5db);
+}
+
+/* ===== MENSAJES DE ESTADO ===== */
+#estado {
+    margin-top: 22px;
+    padding: 13px 15px;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+#estado.ok {
+    background: #e5f7ed;
+    border: 1px solid #b9e8cd;
+    color: #17653e;
+}
+
+#estado.fallo {
+    background: #fff0ef;
+    border: 1px solid #f2c6c2;
+    color: #a32f27;
+}
+
+/* ===== FORMULARIO ===== */
+form {
+    margin-top: 28px;
+}
+
+form br {
+    display: none;
+}
+
+label {
+    display: block;
+    margin-top: 19px;
+    margin-bottom: 8px;
+    color: #304a62;
+    font-size: 14px;
+    font-weight: 650;
+}
+
+.opcional {
+    color: #8292a3;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/* ===== CAMPOS DE ENTRADA ===== */
+input,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 13px 15px;
+    border: 1.5px solid #dce5ee;
+    border-radius: 11px;
+    background: #f9fbfd;
+    color: #24364b;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.25s,
+                box-shadow 0.25s,
+                background 0.25s;
+}
+
+input {
+    min-height: 47px;
+}
+
+textarea {
+    min-height: 135px;
+    resize: vertical;
+    line-height: 1.6;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #9baaba;
+}
+
+input:hover,
+textarea:hover {
+    border-color: #b5cadd;
+}
+
+input:focus,
+textarea:focus {
+    background: #ffffff;
+    border-color: #2688c5;
+    box-shadow: 0 0 0 4px rgba(38, 136, 197, 0.12);
+}
+
+/* ===== VALIDACIÓN ===== */
+.invalido {
+    border-color: #d74747 !important;
+    background: #fffafa;
+}
+
+.invalido:focus {
+    box-shadow: 0 0 0 4px rgba(215, 71, 71, 0.10);
+}
+
+.error {
+    display: block;
+    min-height: 0;
+    margin-top: 6px;
+    color: #c03935;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+/* ===== BOTÓN DE ENVÍO ===== */
+button {
+    display: block;
+    width: 100%;
+    margin-top: 26px;
+    padding: 15px;
+    border: none;
+    border-radius: 11px;
+    background: linear-gradient(135deg, #125b8c, #168ac0);
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    cursor: pointer;
+    box-shadow: 0 8px 18px rgba(18, 91, 140, 0.22);
+    transition: transform 0.2s,
+                box-shadow 0.2s,
+                filter 0.2s;
+}
+
+button:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(18, 91, 140, 0.28);
+    filter: brightness(1.08);
+}
+
+button:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+button:disabled {
+    opacity: 0.65;
+    cursor: wait;
+    box-shadow: none;
+}
+
+
+.subtitulo {
+    margin-top: 14px;
+    color: #718096;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* ===== ADAPTACIÓN A CELULARES ===== */
+@media (max-width: 540px) {
+    body {
+        margin: 20px auto;
+        padding: 25px 20px;
+        border-radius: 17px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    form {
+        margin-top: 22px;
+    }
+}
+```
