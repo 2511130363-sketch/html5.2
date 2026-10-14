@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ejemplo Fetch</title>
+
+</head>
+<body>
+<h1>Usuarios</h1>
+<ul id="lista"></ul>
+<script>
+const lista = document.getElementById("lista");
+// Usamos fetch para obtener datos de una API pública
+fetch("https://jsonplaceholder.typicode.com/users")
+.then(respuesta => respuesta.json()) // convertimos la respuesta a JSON
+.then(usuarios => {
+usuarios.forEach(usuario => {
+const li = document.createElement("li");
+li.textContent = usuario.name; // mostramos el nombre del usuario
+lista.appendChild(li);
+});
+})
+.catch(error => {
+console.error("Error al cargar datos:", error);
+});
+</script>
+</body>
+</html>
