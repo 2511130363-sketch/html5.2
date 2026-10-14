@@ -1,0 +1,1730 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Estudiante | SISACADEMICO UNDC</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Flowbite -->
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+    <nav
+        class="fixed top-0 z-40 w-full bg-white border-b border-gray-200 sm:ml-64">
+
+        <div class="px-4 py-3 lg:px-6">
+
+            <div class="flex items-center justify-between">
+
+                <!-- Botón móvil -->
+                <button
+                    data-drawer-target="sidebar"
+                    data-drawer-toggle="sidebar"
+                    aria-controls="sidebar"
+                    type="button"
+                    class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100">
+
+                    <span class="sr-only">Abrir menú</span>
+
+                    <svg class="w-6 h-6"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24">
+
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16">
+                        </path>
+
+                    </svg>
+                </button>
+
+                <!-- Logo -->
+                <div class="flex items-center">
+
+                    <span class="text-xl font-bold text-blue-700">
+                        SISACADEMICO
+                    </span>
+
+                    <span class="hidden ml-2 text-sm text-gray-500 sm:block">
+                        | UNDC
+                    </span>
+
+                </div>
+
+                <!-- Perfil -->
+                <div class="flex items-center gap-3">
+
+                    <div class="hidden text-right md:block">
+
+                        <p class="text-sm font-semibold text-gray-900">
+                            Treezy Anjely Vilca Dipaz
+                        </p>
+
+                        <p class="text-xs text-gray-500">
+                            Estudiante
+                        </p>
+
+                    </div>
+
+                    <div
+                        class="flex items-center justify-center w-10 h-10 text-sm font-semibold text-white bg-blue-600 rounded-full">
+
+                        TV
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =========================
+         SIDEBAR
+    ========================== -->
+    <aside
+        id="sidebar"
+        class="fixed top-0 left-0 z-50 w-64 h-screen transition-transform -translate-x-full bg-gray-900 sm:translate-x-0">
+
+        <div class="h-full px-3 py-4 overflow-y-auto">
+
+            <!-- Logo -->
+            <div class="flex items-center px-3 mb-8">
+
+            
+
+                <div>
+
+                    <h1 class="text-lg font-bold text-white">
+                        SISACADEMICO
+                    </h1>
+
+                    <p class="text-xs text-gray-400">
+                        Universidad Nacional de Cañete
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Perfil -->
+            <div class="p-3 mb-5 bg-gray-800 rounded-lg">
+
+                <div class="flex items-center gap-3">
+
+                    <div
+                        class="flex items-center justify-center w-10 h-10 font-semibold text-white bg-blue-600 rounded-full">
+
+                        TV
+
+                    </div>
+
+                    <div class="min-w-0">
+
+                        <p class="text-sm font-medium text-white truncate">
+                            Treezy Anjely
+                        </p>
+
+                        <span
+                            class="inline-block px-2 py-1 mt-1 text-xs font-medium text-blue-300 bg-blue-900 rounded">
+
+                            Estudiante
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- MENÚ -->
+            <ul class="space-y-2 font-medium">
+
+                <!-- INICIO -->
+
+                <li>
+
+                    <a
+                        href="#"
+                        data-view="inicio"
+                        data-title="Inicio"
+                        class="flex items-center p-3 text-white bg-blue-600 rounded-lg">
+
+                        <span class="ml-3">
+                            Inicio
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+                <!-- ESTUDIANTE -->
+
+                <li>
+
+                    <p class="px-3 pt-4 pb-2 text-xs font-semibold tracking-wider text-gray-500 uppercase">
+                        Estudiante
+                    </p>
+
+                </li>
+
+
+                <li>
+
+                    <a href="#"
+                        data-view="s0"
+                        data-title="Dashboard"
+                        class="flex items-center p-3 text-gray-300 rounded-lg hover:bg-gray-800">
+
+          
+
+                        <span class="ml-3">
+                            Dashboard
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="#"
+                        data-view="s1"
+                        data-title="Mi cuenta"
+                        class="flex items-center p-3 text-gray-300 rounded-lg hover:bg-gray-800">
+
+                   
+
+                        <span class="ml-3">
+                            Mi cuenta
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="#"
+                        data-view="s2"
+                        data-title="Ficha Socioeconómica"
+                        class="flex items-center p-3 text-gray-300 rounded-lg hover:bg-gray-800">
+
+                    
+
+                        <span class="ml-3">
+                            Ficha Socioeconómica
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="#"
+                        data-view="s3"
+                        data-title="Pagos"
+                        class="flex items-center p-3 text-gray-300 rounded-lg hover:bg-gray-800">
+
+                 
+
+                        <span class="ml-3">
+                            Pagos
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="#"
+                        data-view="s4"
+                        data-title="Información académica"
+                        class="flex items-center p-3 text-gray-300 rounded-lg hover:bg-gray-800">
+
+            
+
+                        <span class="ml-3">
+                            Información académica
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="#"
+                        data-view="s5"
+                        data-title="Mis Trámites"
+                        class="flex items-center p-3 text-gray-300 rounded-lg hover:bg-gray-800">
+
+
+                        <span class="ml-3">
+                            Mis Trámites
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="#"
+                        data-view="s6"
+                        data-title="Calidad"
+                        class="flex items-center p-3 text-gray-300 rounded-lg hover:bg-gray-800">
+
+
+                        <span class="ml-3">
+                            Calidad
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+                <!-- PLATAFORMAS -->
+
+                <li>
+
+                    <p class="px-3 pt-4 pb-2 text-xs font-semibold tracking-wider text-gray-500 uppercase">
+                        Plataformas
+                    </p>
+
+                </li>
+
+
+                <li>
+
+                    <a href="#"
+                        data-view="s7"
+                        data-title="Centro de Idiomas"
+                        class="flex items-center p-3 text-gray-300 rounded-lg hover:bg-gray-800">
+
+
+                        <span class="ml-3">
+                            Centro de Idiomas
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a href="#"
+                        data-view="s8"
+                        data-title="Biblioteca virtual"
+                        class="flex items-center p-3 text-gray-300 rounded-lg hover:bg-gray-800">
+
+
+                        <span class="ml-3">
+                            Biblioteca virtual
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+                <!-- OTROS -->
+
+                <li>
+
+                    <p class="px-3 pt-4 pb-2 text-xs font-semibold tracking-wider text-gray-500 uppercase">
+                        Otros
+                    </p>
+
+                </li>
+
+
+                <li>
+
+                    <a
+                        href="https://www.undc.edu.pe"
+                        target="_blank"
+                        class="flex items-center p-3 text-gray-300 rounded-lg hover:bg-gray-800">
+
+
+                        <span class="ml-3">
+                            Calendario
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a
+                        href="https://www.undc.edu.pe"
+                        target="_blank"
+                        class="flex items-center p-3 text-gray-300 rounded-lg hover:bg-gray-800">
+
+
+                        <span class="ml-3">
+                            Bolsa de trabajo
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a
+                        href="https://www.undc.edu.pe"
+                        target="_blank"
+                        class="flex items-center p-3 text-gray-300 rounded-lg hover:bg-gray-800">
+
+
+                        <span class="ml-3">
+                            Libro de Reclamaciones
+                        </span>
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =========================
+         CONTENIDO PRINCIPAL
+    ========================== -->
+
+    <main class="p-4 pt-20 sm:ml-64">
+
+        <!-- Encabezado -->
+
+        <div class="mb-6">
+
+            <p
+                id="crumb"
+                class="text-sm text-gray-500">
+
+                Inicio
+
+            </p>
+
+            <h1
+                id="title"
+                class="text-2xl font-bold text-gray-900">
+
+                Inicio
+
+            </h1>
+
+        </div>
+
+
+        <!-- =========================
+             INICIO
+        ========================== -->
+
+        <section
+            data-panel
+            id="v-inicio">
+
+            <!-- Bienvenida -->
+
+            <div
+                class="p-6 mb-6 text-white bg-gradient-to-r from-blue-700 to-blue-500 rounded-xl shadow">
+
+                <p class="mb-1 text-sm text-blue-100">
+                    Bienvenido al sistema
+                </p>
+
+                <h2 class="text-2xl font-bold">
+                    ¡Hola, Treezy! 
+                </h2>
+
+                <p class="mt-2 text-sm text-blue-100">
+                    Desde aquí puedes consultar tu información académica,
+                    pagos, trámites y servicios universitarios.
+                </p>
+
+            </div>
+
+
+            <!-- Estadísticas -->
+
+            <div class="grid grid-cols-1 gap-4 mb-6 sm:grid-cols-2 lg:grid-cols-4">
+
+                <div class="p-5 bg-white border rounded-xl shadow-sm">
+
+                    <div class="flex items-center justify-between">
+
+                        <div>
+
+                            <p class="text-sm text-gray-500">
+                                Promedio
+                            </p>
+
+                            <p class="mt-1 text-2xl font-bold text-gray-900">
+                                18.8
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <div class="p-5 bg-white border rounded-xl shadow-sm">
+
+                    <div class="flex items-center justify-between">
+
+                        <div>
+
+                            <p class="text-sm text-gray-500">
+                                Créditos
+                            </p>
+
+                            <p class="mt-1 text-2xl font-bold text-gray-900">
+                                22
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <div class="p-5 bg-white border rounded-xl shadow-sm">
+
+                    <div class="flex items-center justify-between">
+
+                        <div>
+
+                            <p class="text-sm text-gray-500">
+                                Cursos
+                            </p>
+
+                            <p class="mt-1 text-2xl font-bold text-gray-900">
+                                7
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <div class="p-5 bg-white border rounded-xl shadow-sm">
+
+                    <div class="flex items-center justify-between">
+
+                        <div>
+
+                            <p class="text-sm text-gray-500">
+                                Asistencia
+                            </p>
+
+                            <p class="mt-1 text-2xl font-bold text-gray-900">
+                                40%
+                            </p>
+
+                        </div>
+
+                        <div class="p-3 text-orange-600 bg-orange-100 rounded-lg">
+                            ✓
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Comunicados -->
+
+            <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
+
+                <div class="p-6 bg-white border rounded-xl shadow-sm">
+
+                    <h2 class="mb-4 text-lg font-bold">
+                        Comunicados
+                    </h2>
+
+                    <div class="space-y-3">
+
+                        <div
+                            class="p-4 text-blue-800 border border-blue-200 rounded-lg bg-blue-50">
+
+                            <p class="font-semibold">
+                                Matrícula académica
+                            </p>
+
+                            <p class="mt-1 text-sm">
+                                Recuerda verificar tu información académica
+                                correspondiente al presente periodo.
+                            </p>
+
+                        </div>
+
+
+                        <div
+                            class="p-4 text-yellow-800 border border-yellow-200 rounded-lg bg-yellow-50">
+
+                            <p class="font-semibold">
+                                Actualización de datos
+                            </p>
+
+                            <p class="mt-1 text-sm">
+                                Revisa que tus datos personales se encuentren
+                                correctamente registrados.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Anuncios -->
+
+                <div class="p-6 bg-white border rounded-xl shadow-sm">
+
+                    <h2 class="mb-4 text-lg font-bold">
+                        Anuncios
+                    </h2>
+
+                    <div class="space-y-4">
+
+                        <div class="flex gap-3">
+
+
+                            <div>
+
+                                <p class="font-semibold">
+                                    Inicio de clases
+                                </p>
+
+                                <p class="text-sm text-gray-500">
+                                    Consulta tu horario académico.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="flex gap-3">
+
+
+                            <div>
+
+                                <p class="font-semibold">
+                                    Actividades universitarias
+                                </p>
+
+                                <p class="text-sm text-gray-500">
+                                    Revisa las próximas actividades de la UNDC.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             DASHBOARD
+        ========================== -->
+
+        <section
+            data-panel
+            id="v-s0"
+            class="hidden">
+
+            <h2 class="mb-6 text-xl font-bold">
+                Dashboard académico
+            </h2>
+
+
+            <div class="grid grid-cols-1 gap-4 mb-6 md:grid-cols-3">
+
+                <div class="p-5 bg-white border rounded-xl shadow-sm">
+
+                    <p class="text-sm text-gray-500">
+                        Periodo académico
+                    </p>
+
+                    <p class="mt-2 text-lg font-bold">
+                        2026-II
+                    </p>
+
+                </div>
+
+
+                <div class="p-5 bg-white border rounded-xl shadow-sm">
+
+                    <p class="text-sm text-gray-500">
+                        Ciclo
+                    </p>
+
+                    <p class="mt-2 text-lg font-bold">
+                        IV Ciclo
+                    </p>
+
+                </div>
+
+
+                <div class="p-5 bg-white border rounded-xl shadow-sm">
+
+                    <p class="text-sm text-gray-500">
+                        Carrera
+                    </p>
+
+                    <p class="mt-2 text-lg font-bold">
+                        Ingeniería de Sistemas
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="p-6 bg-white border rounded-xl shadow-sm">
+
+                <h3 class="mb-4 text-lg font-bold">
+                    Progreso académico
+                </h3>
+
+                <div class="w-full h-4 bg-gray-200 rounded-full">
+
+                    <div
+                        class="h-4 bg-blue-600 rounded-full"
+                        style="width: 40%;">
+
+                    </div>
+
+                </div>
+
+                <p class="mt-2 text-sm text-gray-500">
+                    40% de avance académico registrado.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             MI CUENTA
+        ========================== -->
+
+        <section
+            data-panel
+            id="v-s1"
+            class="hidden">
+
+            <h2 class="mb-6 text-xl font-bold">
+                Mi cuenta
+            </h2>
+
+            <div class="grid grid-cols-1 gap-6 lg:grid-cols-3">
+
+                <div
+                    class="p-6 text-center bg-white border rounded-xl shadow-sm">
+
+                    <div
+                        class="flex items-center justify-center w-24 h-24 mx-auto mb-4 text-2xl font-bold text-white bg-blue-600 rounded-full">
+
+                        TV
+
+                    </div>
+
+                    <h3 class="text-lg font-bold">
+                        Treezy Anjely Vilca Dipaz
+                    </h3>
+
+                    <p class="mt-1 text-sm text-gray-500">
+                        Estudiante de Ingeniería de Sistemas
+                    </p>
+
+                    <span
+                        class="inline-block px-3 py-1 mt-3 text-xs font-medium text-green-700 bg-green-100 rounded-full">
+
+                        Cuenta activa
+
+                    </span>
+
+                </div>
+
+
+                <div
+                    class="p-6 bg-white border rounded-xl shadow-sm lg:col-span-2">
+
+                    <h3 class="mb-5 text-lg font-bold">
+                        Datos personales
+                    </h3>
+
+                    <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+
+                        <div>
+                            <label class="block mb-2 text-sm font-medium">
+                                Nombres
+                            </label>
+
+                            <input
+                                type="text"
+                                value="Treezy Anjely"
+                                readonly
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5">
+                        </div>
+
+
+                        <div>
+                            <label class="block mb-2 text-sm font-medium">
+                                Apellidos
+                            </label>
+
+                            <input
+                                type="text"
+                                value="Vilca Dipaz"
+                                readonly
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5">
+                        </div>
+
+
+                        <div>
+                            <label class="block mb-2 text-sm font-medium">
+                                Código universitario
+                            </label>
+
+                            <input
+                                type="text"
+                                value="2511130363"
+                                readonly
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5">
+                        </div>
+
+
+                        <div>
+                            <label class="block mb-2 text-sm font-medium">
+                                Correo institucional
+                            </label>
+
+                            <input
+                                type="email"
+                                value="2511130363@undc.edu.pe"
+                                readonly
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FICHA SOCIOECONÓMICA
+        ========================== -->
+
+        <section
+            data-panel
+            id="v-s2"
+            class="hidden">
+
+            <h2 class="mb-2 text-xl font-bold">
+                Ficha Socioeconómica
+            </h2>
+
+            <p class="mb-6 text-sm text-gray-500">
+                Completa y actualiza tu información socioeconómica.
+            </p>
+
+
+            <div class="p-6 bg-white border rounded-xl shadow-sm">
+
+                <div
+                    class="p-4 mb-6 text-blue-800 border border-blue-200 rounded-lg bg-blue-50">
+
+                    <p class="font-semibold">
+                        Estado de la ficha
+                    </p>
+
+                    <p class="text-sm">
+                        Información registrada parcialmente.
+                    </p>
+
+                </div>
+
+
+                <div class="grid grid-cols-1 gap-5 md:grid-cols-2">
+
+                    <div>
+
+                        <label class="block mb-2 text-sm font-medium">
+                            Tipo de vivienda
+                        </label>
+
+                        <select
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5">
+
+                            <option>Seleccione</option>
+                            <option>Propia</option>
+                            <option>Alquilada</option>
+                            <option>Familiar</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div>
+
+                        <label class="block mb-2 text-sm font-medium">
+                            Número de integrantes
+                        </label>
+
+                        <input
+                            type="number"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
+                            placeholder="Ej. 4">
+
+                    </div>
+
+
+                    <div>
+
+                        <label class="block mb-2 text-sm font-medium">
+                            Situación laboral
+                        </label>
+
+                        <select
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5">
+
+                            <option>Seleccione</option>
+                            <option>No trabajo</option>
+                            <option>Trabajo a tiempo parcial</option>
+                            <option>Trabajo a tiempo completo</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div>
+
+                        <label class="block mb-2 text-sm font-medium">
+                            Ingreso familiar aproximado
+                        </label>
+
+                        <select
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5">
+
+                            <option>Seleccione</option>
+                            <option>Menos de S/ 1,000</option>
+                            <option>S/ 1,000 - S/ 2,000</option>
+                            <option>S/ 2,000 - S/ 3,000</option>
+                            <option>Más de S/ 3,000</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    class="mt-6 px-5 py-2.5 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700">
+
+                    Guardar información
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PAGOS
+        ========================== -->
+
+        <section
+            data-panel
+            id="v-s3"
+            class="hidden">
+
+            <h2 class="mb-6 text-xl font-bold">
+                Pagos
+            </h2>
+
+
+            <div class="grid grid-cols-1 gap-4 mb-6 md:grid-cols-3">
+
+                <div class="p-5 bg-white border rounded-xl shadow-sm">
+
+                    <p class="text-sm text-gray-500">
+                        Total pagado
+                    </p>
+
+                    <p class="mt-2 text-2xl font-bold text-green-600">
+                        S/ 90.00
+                    </p>
+
+                </div>
+
+
+                <div class="p-5 bg-white border rounded-xl shadow-sm">
+
+                    <p class="text-sm text-gray-500">
+                        Pendiente
+                    </p>
+
+                    <p class="mt-2 text-2xl font-bold text-red-600">
+                        S/ 10.00
+                    </p>
+
+                </div>
+
+
+                <div class="p-5 bg-white border rounded-xl shadow-sm">
+
+                    <p class="text-sm text-gray-500">
+                        Periodo
+                    </p>
+
+                    <p class="mt-2 text-2xl font-bold">
+                        2026-II
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="overflow-x-auto bg-white border rounded-xl shadow-sm">
+
+                <table class="w-full text-sm text-left">
+
+                    <thead class="text-xs text-gray-700 uppercase bg-gray-100">
+
+                        <tr>
+
+                            <th class="px-6 py-4">
+                                Concepto
+                            </th>
+
+                            <th class="px-6 py-4">
+                                Fecha
+                            </th>
+
+                            <th class="px-6 py-4">
+                                Monto
+                            </th>
+
+                            <th class="px-6 py-4">
+                                Estado
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr class="border-b">
+
+                            <td class="px-6 py-4">
+                                Matrícula
+                            </td>
+
+                            <td class="px-6 py-4">
+                                05/08/2026
+                            </td>
+
+                            <td class="px-6 py-4">
+                                S/ 90.00
+                            </td>
+
+                            <td class="px-6 py-4">
+
+                                <span
+                                    class="px-2.5 py-1 text-xs font-medium text-green-700 bg-green-100 rounded-full">
+
+                                    Pagado
+
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr class="border-b">
+
+                            <td class="px-6 py-4">
+                                Pensión
+                            </td>
+
+                            <td class="px-6 py-4">
+                                10/09/2026
+                            </td>
+
+                            <td class="px-6 py-4">
+                                S/ 90.00
+                            </td>
+
+                            <td class="px-6 py-4">
+
+                                <span
+                                    class="px-2.5 py-1 text-xs font-medium text-green-700 bg-green-100 rounded-full">
+
+                                    Pagado
+
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td class="px-6 py-4">
+                                Pensión
+                            </td>
+
+                            <td class="px-6 py-4">
+                                10/10/2026
+                            </td>
+
+                            <td class="px-6 py-4">
+                                S/ 90.00
+                            </td>
+
+                            <td class="px-6 py-4">
+
+                                <span
+                                    class="px-2.5 py-1 text-xs font-medium text-red-700 bg-red-100 rounded-full">
+
+                                    Pendiente
+
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             INFORMACIÓN ACADÉMICA
+        ========================== -->
+
+        <section
+            data-panel
+            id="v-s4"
+            class="hidden">
+
+            <h2 class="mb-6 text-xl font-bold">
+                Información académica
+            </h2>
+
+
+            <div class="grid grid-cols-1 gap-4 mb-6 md:grid-cols-4">
+
+                <div class="p-4 bg-white border rounded-lg">
+                    <p class="text-sm text-gray-500">Carrera</p>
+                    <p class="mt-1 font-bold">Ingeniería de Sistemas</p>
+                </div>
+
+                <div class="p-4 bg-white border rounded-lg">
+                    <p class="text-sm text-gray-500">Ciclo</p>
+                    <p class="mt-1 font-bold">III</p>
+                </div>
+
+                <div class="p-4 bg-white border rounded-lg">
+                    <p class="text-sm text-gray-500">Periodo</p>
+                    <p class="mt-1 font-bold">2026-II</p>
+                </div>
+
+                <div class="p-4 bg-white border rounded-lg">
+                    <p class="text-sm text-gray-500">Créditos</p>
+                    <p class="mt-1 font-bold">22</p>
+                </div>
+
+            </div>
+
+
+            <div class="overflow-x-auto bg-white border rounded-xl shadow-sm">
+
+                <table class="w-full text-sm text-left">
+
+                    <thead class="text-xs uppercase bg-gray-100">
+
+                        <tr>
+
+                            <th class="px-6 py-4">
+                                Curso
+                            </th>
+
+                            <th class="px-6 py-4">
+                                Créditos
+                            </th>
+
+                            <th class="px-6 py-4">
+                                Nota
+                            </th>
+
+                            <th class="px-6 py-4">
+                                Estado
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr class="border-b">
+
+                            <td class="px-6 py-4 font-medium">
+                                Base de Datos
+                            </td>
+
+                            <td class="px-6 py-4">
+                                4
+                            </td>
+
+                            <td class="px-6 py-4 font-bold">
+                                18
+                            </td>
+
+                            <td class="px-6 py-4 text-green-600">
+                                Aprobado
+                            </td>
+
+                        </tr>
+
+
+                        <tr class="border-b">
+
+                            <td class="px-6 py-4 font-medium">
+                                Diseño Web
+                            </td>
+
+                            <td class="px-6 py-4">
+                                4
+                            </td>
+
+                            <td class="px-6 py-4 font-bold">
+                                18
+                            </td>
+
+                            <td class="px-6 py-4 text-green-600">
+                                Aprobado
+                            </td>
+
+                        </tr>
+
+
+                        <tr class="border-b">
+
+                            <td class="px-6 py-4 font-medium">
+                                Sistemas Digitales
+                            </td>
+
+                            <td class="px-6 py-4">
+                                4
+                            </td>
+
+                            <td class="px-6 py-4 font-bold">
+                                16
+                            </td>
+
+                            <td class="px-6 py-4 text-green-600">
+                                Aprobado
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td class="px-6 py-4 font-medium">
+                                Derecho Empresarial
+                            </td>
+
+                            <td class="px-6 py-4">
+                                3
+                            </td>
+
+                            <td class="px-6 py-4 font-bold">
+                                16
+                            </td>
+
+                            <td class="px-6 py-4 text-green-600">
+                                Aprobado
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             TRÁMITES
+        ========================== -->
+
+        <section
+            data-panel
+            id="v-s5"
+            class="hidden">
+
+            <h2 class="mb-6 text-xl font-bold">
+                Mis Trámites
+            </h2>
+
+
+            <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+
+                <div class="p-5 bg-white border rounded-xl shadow-sm">
+
+                    <div class="flex items-start justify-between">
+
+                        <div>
+
+                            <h3 class="font-bold">
+                                Constancia de estudios
+                            </h3>
+
+                            <p class="mt-1 text-sm text-gray-500">
+                                Solicitud realizada el 15/09/2026
+                            </p>
+
+                        </div>
+
+                        <span
+                            class="px-2.5 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full">
+
+                            En proceso
+
+                        </span>
+
+                    </div>
+
+                    <button
+                        class="mt-4 text-sm font-medium text-blue-600 hover:underline">
+
+                        Ver detalle →
+
+                    </button>
+
+                </div>
+
+
+                <div class="p-5 bg-white border rounded-xl shadow-sm">
+
+                    <div class="flex items-start justify-between">
+
+                        <div>
+
+                            <h3 class="font-bold">
+                                Certificado de estudios
+                            </h3>
+
+                            <p class="mt-1 text-sm text-gray-500">
+                                Solicitud realizada el 02/09/2026
+                            </p>
+
+                        </div>
+
+                        <span
+                            class="px-2.5 py-1 text-xs text-green-700 bg-green-100 rounded-full">
+
+                            Atendido
+
+                        </span>
+
+                    </div>
+
+                    <button
+                        class="mt-4 text-sm font-medium text-blue-600 hover:underline">
+
+                        Ver detalle →
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CALIDAD
+        ========================== -->
+
+        <section
+            data-panel
+            id="v-s6"
+            class="hidden">
+
+            <h2 class="mb-2 text-xl font-bold">
+                Calidad
+            </h2>
+
+            <p class="mb-6 text-sm text-gray-500">
+                Participa en las encuestas de evaluación de los servicios universitarios.
+            </p>
+
+
+            <div class="p-6 bg-white border rounded-xl shadow-sm">
+
+                <h3 class="font-bold">
+                    Encuesta de satisfacción estudiantil
+                </h3>
+
+                <p class="mt-2 text-sm text-gray-500">
+                    Tu opinión ayuda a identificar oportunidades de mejora.
+                </p>
+
+                <button
+                    class="mt-5 px-5 py-2.5 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700">
+
+                    Responder encuesta
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CENTRO DE IDIOMAS
+        ========================== -->
+
+        <section
+            data-panel
+            id="v-s7"
+            class="hidden">
+
+            <h2 class="mb-6 text-xl font-bold">
+                Centro de Idiomas
+            </h2>
+
+
+            <div class="grid grid-cols-1 gap-5 md:grid-cols-3">
+
+                <div class="p-6 bg-white border rounded-xl shadow-sm">
+
+                    <p class="text-sm text-gray-500">
+                        Idioma
+                    </p>
+
+                    <p class="mt-2 text-xl font-bold">
+                        Inglés
+                    </p>
+
+                </div>
+
+
+                <div class="p-6 bg-white border rounded-xl shadow-sm">
+
+                    <p class="text-sm text-gray-500">
+                        Nivel actual
+                    </p>
+
+                    <p class="mt-2 text-xl font-bold">
+                        Básico II
+                    </p>
+
+                </div>
+
+
+                <div class="p-6 bg-white border rounded-xl shadow-sm">
+
+                    <p class="text-sm text-gray-500">
+                        Progreso
+                    </p>
+
+                    <p class="mt-2 text-xl font-bold">
+                        68%
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             BIBLIOTECA
+        ========================== -->
+
+        <section
+            data-panel
+            id="v-s8"
+            class="hidden">
+
+            <h2 class="mb-2 text-xl font-bold">
+                Biblioteca virtual
+            </h2>
+
+            <p class="mb-6 text-sm text-gray-500">
+                Busca recursos académicos para tus cursos.
+            </p>
+
+
+            <div class="p-6 mb-6 bg-white border rounded-xl shadow-sm">
+
+                <div class="flex flex-col gap-3 md:flex-row">
+
+                    <input
+                        type="text"
+                        placeholder="Buscar libro, artículo o recurso..."
+                        class="flex-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-2.5">
+
+                    <button
+                        class="px-5 py-2.5 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700">
+
+                        Buscar
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
+
+                <div class="p-5 bg-white border rounded-xl shadow-sm">
+
+                  
+
+                    <h3 class="mt-3 font-bold">
+                        Bases de Datos
+                    </h3>
+
+                    <p class="mt-1 text-sm text-gray-500">
+                        Recurso académico relacionado con bases de datos.
+                    </p>
+
+                    <button
+                        class="mt-4 text-sm font-medium text-blue-600 hover:underline">
+
+                        Consultar →
+
+                    </button>
+
+                </div>
+
+
+                <div class="p-5 bg-white border rounded-xl shadow-sm">
+
+                 
+
+                    <h3 class="mt-3 font-bold">
+                        Desarrollo Web
+                    </h3>
+
+                    <p class="mt-1 text-sm text-gray-500">
+                        Material sobre HTML, CSS y JavaScript.
+                    </p>
+
+                    <button
+                        class="mt-4 text-sm font-medium text-blue-600 hover:underline">
+
+                        Consultar →
+
+                    </button>
+
+                </div>
+
+
+                <div class="p-5 bg-white border rounded-xl shadow-sm">
+
+
+                    <h3 class="mt-3 font-bold">
+                        Estadística
+                    </h3>
+
+                    <p class="mt-1 text-sm text-gray-500">
+                        Recursos para estadística y análisis de datos.
+                    </p>
+
+                    <button
+                        class="mt-4 text-sm font-medium text-blue-600 hover:underline">
+
+                        Consultar →
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer
+        class="mt-10 p-4 text-center text-xs text-gray-500 border-t bg-white sm:ml-64">
+
+        © 2026 Universidad Nacional de Cañete - SISACADEMICO
+
+    </footer>
+
+
+    <!-- Flowbite -->
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script>
+
+        const links = document.querySelectorAll("[data-view]");
+        const panels = document.querySelectorAll("[data-panel]");
+
+        links.forEach(link => {
+
+            link.addEventListener("click", function (e) {
+
+                e.preventDefault();
+
+                const view = this.dataset.view;
+                const title = this.dataset.title;
+
+                // Ocultar todos los paneles
+                panels.forEach(panel => {
+
+                    panel.classList.toggle(
+                        "hidden",
+                        panel.id !== `v-${view}`
+                    );
+
+                });
+
+
+                // Cambiar estado del menú
+                links.forEach(item => {
+
+                    item.classList.remove(
+                        "bg-blue-600",
+                        "text-white"
+                    );
+
+                    item.classList.add(
+                        "text-gray-300"
+                    );
+
+                });
+
+
+                this.classList.remove(
+                    "text-gray-300"
+                );
+
+                this.classList.add(
+                    "bg-blue-600",
+                    "text-white"
+                );
+
+
+                // Cambiar título
+                document.getElementById("title").textContent = title;
+                document.getElementById("crumb").textContent = title;
+
+
+                // Cerrar sidebar en móvil
+                document
+                    .getElementById("sidebar")
+                    .classList.add("-translate-x-full");
+
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>

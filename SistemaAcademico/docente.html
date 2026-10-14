@@ -1,0 +1,2463 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Docente | SISACADEMICO UNDC</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Flowbite -->
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <nav class="fixed top-0 z-40 w-full bg-white border-b border-gray-200">
+
+        <div class="px-4 py-3">
+
+            <div class="flex items-center justify-between">
+
+                <!-- Botón móvil -->
+
+                <button
+                    data-drawer-target="sidebar"
+                    data-drawer-toggle="sidebar"
+                    aria-controls="sidebar"
+                    type="button"
+                    class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100">
+
+                    <span class="sr-only">
+                        Abrir menú
+                    </span>
+
+                    <svg class="w-6 h-6"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24">
+
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16">
+                        </path>
+
+                    </svg>
+
+                </button>
+
+
+                <!-- Logo -->
+
+                <div class="flex items-center">
+
+                    <span class="text-xl font-bold text-green-700">
+                        SISACADEMICO
+                    </span>
+
+                    <span class="hidden ml-2 text-sm text-gray-500 sm:block">
+                        | UNDC
+                    </span>
+
+                </div>
+
+
+                <!-- Perfil -->
+
+                <div class="flex items-center gap-3">
+
+                    <div class="hidden text-right md:block">
+
+                        <p class="text-sm font-semibold text-gray-900">
+                            Docente UNDC
+                        </p>
+
+                        <p class="text-xs text-gray-500">
+                            Ingeniería de Sistemas
+                        </p>
+
+                    </div>
+
+
+                    <div
+                        class="flex items-center justify-center w-10 h-10 font-semibold text-white bg-green-600 rounded-full">
+
+                        DR
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =====================================================
+         SIDEBAR
+    ====================================================== -->
+
+    <aside
+        id="sidebar"
+        class="fixed top-0 left-0 z-50 w-64 h-screen transition-transform -translate-x-full bg-gray-900 sm:translate-x-0">
+
+        <div class="h-full px-3 py-4 overflow-y-auto">
+
+            <!-- Logo -->
+
+            <div class="flex items-center px-3 mb-8">
+
+                <div
+                    class="flex items-center justify-center w-10 h-10 mr-3 text-white bg-green-600 rounded-lg">
+
+                    🎓
+
+                </div>
+
+                <div>
+
+                    <h1 class="text-lg font-bold text-white">
+                        SISACADEMICO
+                    </h1>
+
+                    <p class="text-xs text-gray-400">
+                        Universidad Nacional de Cañete
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Perfil -->
+
+            <div class="p-3 mb-5 bg-gray-800 rounded-lg">
+
+                <div class="flex items-center gap-3">
+
+                    <div
+                        class="flex items-center justify-center w-10 h-10 font-semibold text-white bg-green-600 rounded-full">
+
+                        DR
+
+                    </div>
+
+                    <div class="min-w-0">
+
+                        <p class="text-sm font-medium text-white truncate">
+                            Docente UNDC
+                        </p>
+
+                        <span
+                            class="inline-block px-2 py-1 mt-1 text-xs font-medium text-green-300 bg-green-900 rounded">
+
+                            Docente
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- MENÚ -->
+
+            <ul class="space-y-2 font-medium">
+
+                <!-- INICIO -->
+
+                <li>
+
+                    <a
+                        href="#"
+                        data-view="inicio"
+                        data-title="Inicio"
+                        class="flex items-center p-3 text-white bg-green-600 rounded-lg">
+
+                        <span class="ml-3">
+                            Inicio
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+                <!-- DOCENTE -->
+
+                <li>
+
+                    <p
+                        class="px-3 pt-4 pb-2 text-xs font-semibold tracking-wider text-gray-500 uppercase">
+
+                        Docente
+
+                    </p>
+
+                </li>
+
+
+                <li>
+
+                    <a
+                        href="#"
+                        data-view="s0"
+                        data-title="Dashboard"
+                        class="flex items-center p-3 text-gray-300 rounded-lg hover:bg-gray-800">
+
+
+                        <span class="ml-3">
+                            Dashboard
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a
+                        href="#"
+                        data-view="s1"
+                        data-title="Mi cuenta"
+                        class="flex items-center p-3 text-gray-300 rounded-lg hover:bg-gray-800">
+
+                   
+
+                        <span class="ml-3">
+                            Mi cuenta
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a
+                        href="#"
+                        data-view="s2"
+                        data-title="Mis Cursos"
+                        class="flex items-center p-3 text-gray-300 rounded-lg hover:bg-gray-800">
+
+                  
+
+                        <span class="ml-3">
+                            Mis Cursos
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a
+                        href="#"
+                        data-view="s3"
+                        data-title="Registro de Notas"
+                        class="flex items-center p-3 text-gray-300 rounded-lg hover:bg-gray-800">
+
+                     
+
+                        <span class="ml-3">
+                            Registro de Notas
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a
+                        href="#"
+                        data-view="s4"
+                        data-title="Asistencia"
+                        class="flex items-center p-3 text-gray-300 rounded-lg hover:bg-gray-800">
+
+                      
+
+                        <span class="ml-3">
+                            Asistencia
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a
+                        href="#"
+                        data-view="s5"
+                        data-title="Horarios"
+                        class="flex items-center p-3 text-gray-300 rounded-lg hover:bg-gray-800">
+
+                     
+
+                        <span class="ml-3">
+                            Horarios
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a
+                        href="#"
+                        data-view="s6"
+                        data-title="Mis Trámites"
+                        class="flex items-center p-3 text-gray-300 rounded-lg hover:bg-gray-800">
+
+                 
+
+                        <span class="ml-3">
+                            Mis Trámites
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+                <!-- PLATAFORMAS -->
+
+                <li>
+
+                    <p
+                        class="px-3 pt-4 pb-2 text-xs font-semibold tracking-wider text-gray-500 uppercase">
+
+                        Plataformas
+
+                    </p>
+
+                </li>
+
+
+                <li>
+
+                    <a
+                        href="#"
+                        data-view="s7"
+                        data-title="Centro de Idiomas"
+                        class="flex items-center p-3 text-gray-300 rounded-lg hover:bg-gray-800">
+
+                   
+
+                        <span class="ml-3">
+                            Centro de Idiomas
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a
+                        href="#"
+                        data-view="s8"
+                        data-title="Biblioteca virtual"
+                        class="flex items-center p-3 text-gray-300 rounded-lg hover:bg-gray-800">
+
+                   
+
+                        <span class="ml-3">
+                            Biblioteca virtual
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+                <!-- OTROS -->
+
+                <li>
+
+                    <p
+                        class="px-3 pt-4 pb-2 text-xs font-semibold tracking-wider text-gray-500 uppercase">
+
+                        Otros
+
+                    </p>
+
+                </li>
+
+
+                <li>
+
+                    <a
+                        href="https://www.undc.edu.pe"
+                        target="_blank"
+                        class="flex items-center p-3 text-gray-300 rounded-lg hover:bg-gray-800">
+
+                      
+
+                        <span class="ml-3">
+                            Calendario
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a
+                        href="https://www.undc.edu.pe"
+                        target="_blank"
+                        class="flex items-center p-3 text-gray-300 rounded-lg hover:bg-gray-800">
+
+                      
+
+                        <span class="ml-3">
+                            Bolsa de trabajo
+                        </span>
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a
+                        href="https://www.undc.edu.pe"
+                        target="_blank"
+                        class="flex items-center p-3 text-gray-300 rounded-lg hover:bg-gray-800">
+
+                     
+
+                        <span class="ml-3">
+                            Libro de Reclamaciones
+                        </span>
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =====================================================
+         CONTENIDO PRINCIPAL
+    ====================================================== -->
+
+    <main class="p-4 pt-20 sm:ml-64">
+
+        <!-- Encabezado -->
+
+        <div class="mb-6">
+
+            <p
+                id="crumb"
+                class="text-sm text-gray-500">
+
+                Inicio
+
+            </p>
+
+            <h1
+                id="title"
+                class="text-2xl font-bold text-gray-900">
+
+                Inicio
+
+            </h1>
+
+        </div>
+
+
+        <!-- =================================================
+             INICIO
+        ================================================== -->
+
+        <section
+            data-panel
+            id="v-inicio">
+
+            <!-- Bienvenida -->
+
+            <div
+                class="p-6 mb-6 text-white bg-gradient-to-r from-green-700 to-green-500 rounded-xl shadow">
+
+                <p class="mb-1 text-sm text-green-100">
+                    Panel docente
+                </p>
+
+                <h2 class="text-2xl font-bold">
+                    ¡Bienvenido, docente! 
+                </h2>
+
+                <p class="mt-2 text-sm text-green-100">
+                    Desde este sistema puedes administrar tus cursos,
+                    registrar notas, controlar asistencia y consultar tus horarios.
+                </p>
+
+            </div>
+
+
+            <!-- Estadísticas -->
+
+            <div
+                class="grid grid-cols-1 gap-4 mb-6 sm:grid-cols-2 lg:grid-cols-4">
+
+                <div
+                    class="p-5 bg-white border rounded-xl shadow-sm">
+
+                    <p class="text-sm text-gray-500">
+                        Cursos asignados
+                    </p>
+
+                    <p class="mt-1 text-2xl font-bold">
+                        4
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="p-5 bg-white border rounded-xl shadow-sm">
+
+                    <p class="text-sm text-gray-500">
+                        Estudiantes
+                    </p>
+
+                    <p class="mt-1 text-2xl font-bold">
+                        128
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="p-5 bg-white border rounded-xl shadow-sm">
+
+                    <p class="text-sm text-gray-500">
+                        Notas pendientes
+                    </p>
+
+                    <p class="mt-1 text-2xl font-bold text-orange-500">
+                        12
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="p-5 bg-white border rounded-xl shadow-sm">
+
+                    <p class="text-sm text-gray-500">
+                        Asistencia registrada
+                    </p>
+
+                    <p class="mt-1 text-2xl font-bold text-green-600">
+                        94%
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Avisos -->
+
+            <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
+
+                <div
+                    class="p-6 bg-white border rounded-xl shadow-sm">
+
+                    <h2 class="mb-4 text-lg font-bold">
+                        Comunicados
+                    </h2>
+
+
+                    <div
+                        class="p-4 mb-3 text-green-800 border border-green-200 rounded-lg bg-green-50">
+
+                        <p class="font-semibold">
+                            Registro de notas
+                        </p>
+
+                        <p class="mt-1 text-sm">
+                            Recuerde registrar las notas correspondientes
+                            al periodo académico.
+                        </p>
+
+                    </div>
+
+
+                    <div
+                        class="p-4 text-blue-800 border border-blue-200 rounded-lg bg-blue-50">
+
+                        <p class="font-semibold">
+                            Horarios
+                        </p>
+
+                        <p class="mt-1 text-sm">
+                            Consulte sus grupos y horarios desde la sección
+                            "Mis Cursos".
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    class="p-6 bg-white border rounded-xl shadow-sm">
+
+                    <h2 class="mb-4 text-lg font-bold">
+                        Actividades pendientes
+                    </h2>
+
+
+                    <div class="space-y-4">
+
+                        <div class="flex items-center gap-3">
+
+                            <div
+                                class="flex items-center justify-center w-10 h-10 text-orange-600 bg-orange-100 rounded-lg">
+
+                                
+
+                            </div>
+
+                            <div>
+
+                                <p class="font-semibold">
+                                    Registro de notas
+                                </p>
+
+                                <p class="text-sm text-gray-500">
+                                    12 registros pendientes.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="flex items-center gap-3">
+
+                            <div
+                                class="flex items-center justify-center w-10 h-10 text-blue-600 bg-blue-100 rounded-lg">
+
+                                
+
+                            </div>
+
+                            <div>
+
+                                <p class="font-semibold">
+                                    Asistencia
+                                </p>
+
+                                <p class="text-sm text-gray-500">
+                                    Revisar asistencia de esta semana.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             DASHBOARD
+        ================================================== -->
+
+        <section
+            data-panel
+            id="v-s0"
+            class="hidden">
+
+            <h2 class="mb-6 text-xl font-bold">
+                Dashboard docente
+            </h2>
+
+
+            <div
+                class="grid grid-cols-1 gap-4 mb-6 md:grid-cols-3">
+
+                <div class="p-5 bg-white border rounded-xl shadow-sm">
+
+                    <p class="text-sm text-gray-500">
+                        Periodo académico
+                    </p>
+
+                    <p class="mt-2 text-xl font-bold">
+                        2026-II
+                    </p>
+
+                </div>
+
+
+                <div class="p-5 bg-white border rounded-xl shadow-sm">
+
+                    <p class="text-sm text-gray-500">
+                        Facultad
+                    </p>
+
+                    <p class="mt-2 text-xl font-bold">
+                        Ingeniería
+                    </p>
+
+                </div>
+
+
+                <div class="p-5 bg-white border rounded-xl shadow-sm">
+
+                    <p class="text-sm text-gray-500">
+                        Cursos
+                    </p>
+
+                    <p class="mt-2 text-xl font-bold">
+                        4
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="p-6 bg-white border rounded-xl shadow-sm">
+
+                <h3 class="mb-4 text-lg font-bold">
+                    Resumen de actividades
+                </h3>
+
+
+                <div class="space-y-5">
+
+                    <div>
+
+                        <div class="flex justify-between mb-2">
+
+                            <span class="text-sm font-medium">
+                                Registro de notas
+                            </span>
+
+                            <span class="text-sm text-gray-500">
+                                80%
+                            </span>
+
+                        </div>
+
+                        <div
+                            class="w-full h-3 bg-gray-200 rounded-full">
+
+                            <div
+                                class="h-3 bg-green-600 rounded-full"
+                                style="width: 80%;">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div>
+
+                        <div class="flex justify-between mb-2">
+
+                            <span class="text-sm font-medium">
+                                Asistencia
+                            </span>
+
+                            <span class="text-sm text-gray-500">
+                                94%
+                            </span>
+
+                        </div>
+
+                        <div
+                            class="w-full h-3 bg-gray-200 rounded-full">
+
+                            <div
+                                class="h-3 bg-blue-600 rounded-full"
+                                style="width: 94%;">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             MI CUENTA
+        ================================================== -->
+
+        <section
+            data-panel
+            id="v-s1"
+            class="hidden">
+
+            <h2 class="mb-6 text-xl font-bold">
+                Mi cuenta
+            </h2>
+
+
+            <div class="grid grid-cols-1 gap-6 lg:grid-cols-3">
+
+                <div
+                    class="p-6 text-center bg-white border rounded-xl shadow-sm">
+
+                    <div
+                        class="flex items-center justify-center w-24 h-24 mx-auto mb-4 text-2xl font-bold text-white bg-green-600 rounded-full">
+
+                        DR
+
+                    </div>
+
+                    <h3 class="text-lg font-bold">
+                        Docente UNDC
+                    </h3>
+
+                    <p class="mt-1 text-sm text-gray-500">
+                        Ingeniería de Sistemas
+                    </p>
+
+                    <span
+                        class="inline-block px-3 py-1 mt-3 text-xs font-medium text-green-700 bg-green-100 rounded-full">
+
+                        Cuenta activa
+
+                    </span>
+
+                </div>
+
+
+                <div
+                    class="p-6 bg-white border rounded-xl shadow-sm lg:col-span-2">
+
+                    <h3 class="mb-5 text-lg font-bold">
+                        Información personal
+                    </h3>
+
+
+                    <div
+                        class="grid grid-cols-1 gap-4 md:grid-cols-2">
+
+                        <div>
+
+                            <label
+                                class="block mb-2 text-sm font-medium">
+
+                                Nombres
+
+                            </label>
+
+                            <input
+                                type="text"
+                                value="Docente"
+                                readonly
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5">
+
+                        </div>
+
+
+                        <div>
+
+                            <label
+                                class="block mb-2 text-sm font-medium">
+
+                                Apellidos
+
+                            </label>
+
+                            <input
+                                type="text"
+                                value="UNDC"
+                                readonly
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5">
+
+                        </div>
+
+
+                        <div>
+
+                            <label
+                                class="block mb-2 text-sm font-medium">
+
+                                Código docente
+
+                            </label>
+
+                            <input
+                                type="text"
+                                value="DOC-2026-001"
+                                readonly
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5">
+
+                        </div>
+
+
+                        <div>
+
+                            <label
+                                class="block mb-2 text-sm font-medium">
+
+                                Correo institucional
+
+                            </label>
+
+                            <input
+                                type="email"
+                                value="docente@undc.edu.pe"
+                                readonly
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             MIS CURSOS
+        ================================================== -->
+
+        <section
+            data-panel
+            id="v-s2"
+            class="hidden">
+
+            <h2 class="mb-2 text-xl font-bold">
+                Mis Cursos
+            </h2>
+
+            <p class="mb-6 text-sm text-gray-500">
+                Cursos y grupos asignados durante el periodo académico.
+            </p>
+
+
+            <div
+                class="grid grid-cols-1 gap-5 md:grid-cols-2">
+
+                <!-- Curso 1 -->
+
+                <div
+                    class="p-6 bg-white border rounded-xl shadow-sm">
+
+                    <div class="flex items-start justify-between">
+
+                        <div>
+
+                            <span
+                                class="px-2.5 py-1 text-xs font-medium text-green-700 bg-green-100 rounded-full">
+
+                                Activo
+
+                            </span>
+
+                            <h3 class="mt-3 text-lg font-bold">
+                                Base de Datos
+                            </h3>
+
+                        </div>
+
+                       
+
+                    </div>
+
+
+                    <div class="mt-5 space-y-2 text-sm text-gray-600">
+
+                        <p>
+                            <strong>Grupo:</strong> III-B
+                        </p>
+
+                        <p>
+                            <strong>Créditos:</strong> 4
+                        </p>
+
+                        <p>
+                            <strong>Estudiantes:</strong> 32
+                        </p>
+
+                        <p>
+                            <strong>Horario:</strong> Lunes 2:00 PM - 4:00 PM
+                        </p>
+
+                    </div>
+
+
+                    <button
+                        class="w-full mt-5 px-4 py-2.5 text-sm font-medium text-white bg-green-600 rounded-lg hover:bg-green-700">
+
+                        Ver curso
+
+                    </button>
+
+                </div>
+
+
+                <!-- Curso 2 -->
+
+                <div
+                    class="p-6 bg-white border rounded-xl shadow-sm">
+
+                    <div class="flex items-start justify-between">
+
+                        <div>
+
+                            <span
+                                class="px-2.5 py-1 text-xs font-medium text-green-700 bg-green-100 rounded-full">
+
+                                Activo
+
+                            </span>
+
+                            <h3 class="mt-3 text-lg font-bold">
+                                Diseño Web
+                            </h3>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="mt-5 space-y-2 text-sm text-gray-600">
+
+                        <p>
+                            <strong>Grupo:</strong> III-B
+                        </p>
+
+                        <p>
+                            <strong>Créditos:</strong> 4
+                        </p>
+
+                        <p>
+                            <strong>Estudiantes:</strong> 30
+                        </p>
+
+                        <p>
+                            <strong>Horario:</strong> Martes 2:00 PM - 4:00 PM
+                        </p>
+
+                    </div>
+
+
+                    <button
+                        class="w-full mt-5 px-4 py-2.5 text-sm font-medium text-white bg-green-600 rounded-lg hover:bg-green-700">
+
+                        Ver curso
+
+                    </button>
+
+                </div>
+
+
+                <!-- Curso 3 -->
+
+                <div
+                    class="p-6 bg-white border rounded-xl shadow-sm">
+
+                    <div class="flex items-start justify-between">
+
+                        <div>
+
+                            <span
+                                class="px-2.5 py-1 text-xs font-medium text-green-700 bg-green-100 rounded-full">
+
+                                Activo
+
+                            </span>
+
+                            <h3 class="mt-3 text-lg font-bold">
+                                Sistemas Digitales
+                            </h3>
+
+                        </div>
+
+                    
+
+                    </div>
+
+
+                    <div class="mt-5 space-y-2 text-sm text-gray-600">
+
+                        <p>
+                            <strong>Grupo:</strong> III-B
+                        </p>
+
+                        <p>
+                            <strong>Créditos:</strong> 4
+                        </p>
+
+                        <p>
+                            <strong>Estudiantes:</strong> 35
+                        </p>
+
+                        <p>
+                            <strong>Horario:</strong> Miércoles 2:00 PM - 4:00 PM
+                        </p>
+
+                    </div>
+
+
+                    <button
+                        class="w-full mt-5 px-4 py-2.5 text-sm font-medium text-white bg-green-600 rounded-lg hover:bg-green-700">
+
+                        Ver curso
+
+                    </button>
+
+                </div>
+
+
+                <!-- Curso 4 -->
+
+                <div
+                    class="p-6 bg-white border rounded-xl shadow-sm">
+
+                    <div class="flex items-start justify-between">
+
+                        <div>
+
+                            <span
+                                class="px-2.5 py-1 text-xs font-medium text-green-700 bg-green-100 rounded-full">
+
+                                Activo
+
+                            </span>
+
+                            <h3 class="mt-3 text-lg font-bold">
+                                Programación
+                            </h3>
+
+                        </div>
+
+                       
+
+                    </div>
+
+
+                    <div class="mt-5 space-y-2 text-sm text-gray-600">
+
+                        <p>
+                            <strong>Grupo:</strong> III-A
+                        </p>
+
+                        <p>
+                            <strong>Créditos:</strong> 4
+                        </p>
+
+                        <p>
+                            <strong>Estudiantes:</strong> 31
+                        </p>
+
+                        <p>
+                            <strong>Horario:</strong> Jueves 2:00 PM - 4:00 PM
+                        </p>
+
+                    </div>
+
+
+                    <button
+                        class="w-full mt-5 px-4 py-2.5 text-sm font-medium text-white bg-green-600 rounded-lg hover:bg-green-700">
+
+                        Ver curso
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             REGISTRO DE NOTAS
+        ================================================== -->
+
+        <section
+            data-panel
+            id="v-s3"
+            class="hidden">
+
+            <div class="flex flex-col justify-between gap-4 mb-6 md:flex-row md:items-center">
+
+                <div>
+
+                    <h2 class="text-xl font-bold">
+                        Registro de Notas
+                    </h2>
+
+                    <p class="mt-1 text-sm text-gray-500">
+                        Registra las calificaciones de tus estudiantes.
+                    </p>
+
+                </div>
+
+
+                <select
+                    id="cursoNotas"
+                    class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg p-2.5">
+
+                    <option>
+                        Base de Datos - III-B
+                    </option>
+
+                    <option>
+                        Diseño Web - III-B
+                    </option>
+
+                    <option>
+                        Sistemas Digitales - III-B
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div
+                class="overflow-x-auto bg-white border rounded-xl shadow-sm">
+
+                <table
+                    class="w-full text-sm text-left">
+
+                    <thead
+                        class="text-xs text-gray-700 uppercase bg-gray-100">
+
+                        <tr>
+
+                            <th class="px-5 py-4">
+                                Código
+                            </th>
+
+                            <th class="px-5 py-4">
+                                Estudiante
+                            </th>
+
+                            <th class="px-5 py-4">
+                                PC1
+                            </th>
+
+                            <th class="px-5 py-4">
+                                PC2
+                            </th>
+
+                            <th class="px-5 py-4">
+                                Examen
+                            </th>
+
+                            <th class="px-5 py-4">
+                                Promedio
+                            </th>
+
+                            <th class="px-5 py-4">
+                                Estado
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        <!-- Estudiante 1 -->
+
+                        <tr class="border-b">
+
+                            <td class="px-5 py-4">
+                                2024-001
+                            </td>
+
+                            <td class="px-5 py-4 font-medium">
+                                Ana López
+                            </td>
+
+                            <td class="px-5 py-4">
+
+                                <input
+                                    type="number"
+                                    min="0"
+                                    max="20"
+                                    value="17"
+                                    class="nota w-16 bg-gray-50 border border-gray-300 rounded-lg p-2 text-center"
+                                    data-row="1">
+
+                            </td>
+
+                            <td class="px-5 py-4">
+
+                                <input
+                                    type="number"
+                                    min="0"
+                                    max="20"
+                                    value="16"
+                                    class="nota w-16 bg-gray-50 border border-gray-300 rounded-lg p-2 text-center"
+                                    data-row="1">
+
+                            </td>
+
+                            <td class="px-5 py-4">
+
+                                <input
+                                    type="number"
+                                    min="0"
+                                    max="20"
+                                    value="18"
+                                    class="nota w-16 bg-gray-50 border border-gray-300 rounded-lg p-2 text-center"
+                                    data-row="1">
+
+                            </td>
+
+                            <td
+                                class="px-5 py-4 font-bold promedio"
+                                data-row="1">
+
+                                17.0
+
+                            </td>
+
+                            <td
+                                class="px-5 py-4 estado"
+                                data-row="1">
+
+                                <span
+                                    class="px-2.5 py-1 text-xs font-medium text-green-700 bg-green-100 rounded-full">
+
+                                    Aprobado
+
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+
+                        <!-- Estudiante 2 -->
+
+                        <tr class="border-b">
+
+                            <td class="px-5 py-4">
+                                2024-002
+                            </td>
+
+                            <td class="px-5 py-4 font-medium">
+                                Carlos Pérez
+                            </td>
+
+                            <td class="px-5 py-4">
+
+                                <input
+                                    type="number"
+                                    min="0"
+                                    max="20"
+                                    value="12"
+                                    class="nota w-16 bg-gray-50 border border-gray-300 rounded-lg p-2 text-center"
+                                    data-row="2">
+
+                            </td>
+
+                            <td class="px-5 py-4">
+
+                                <input
+                                    type="number"
+                                    min="0"
+                                    max="20"
+                                    value="14"
+                                    class="nota w-16 bg-gray-50 border border-gray-300 rounded-lg p-2 text-center"
+                                    data-row="2">
+
+                            </td>
+
+                            <td class="px-5 py-4">
+
+                                <input
+                                    type="number"
+                                    min="0"
+                                    max="20"
+                                    value="13"
+                                    class="nota w-16 bg-gray-50 border border-gray-300 rounded-lg p-2 text-center"
+                                    data-row="2">
+
+                            </td>
+
+                            <td
+                                class="px-5 py-4 font-bold promedio"
+                                data-row="2">
+
+                                13.0
+
+                            </td>
+
+                            <td
+                                class="px-5 py-4 estado"
+                                data-row="2">
+
+                                <span
+                                    class="px-2.5 py-1 text-xs font-medium text-red-700 bg-red-100 rounded-full">
+
+                                    Desaprobado
+
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+
+                        <!-- Estudiante 3 -->
+
+                        <tr class="border-b">
+
+                            <td class="px-5 py-4">
+                                2024-003
+                            </td>
+
+                            <td class="px-5 py-4 font-medium">
+                                María Torres
+                            </td>
+
+                            <td class="px-5 py-4">
+
+                                <input
+                                    type="number"
+                                    min="0"
+                                    max="20"
+                                    value="19"
+                                    class="nota w-16 bg-gray-50 border border-gray-300 rounded-lg p-2 text-center"
+                                    data-row="3">
+
+                            </td>
+
+                            <td class="px-5 py-4">
+
+                                <input
+                                    type="number"
+                                    min="0"
+                                    max="20"
+                                    value="18"
+                                    class="nota w-16 bg-gray-50 border border-gray-300 rounded-lg p-2 text-center"
+                                    data-row="3">
+
+                            </td>
+
+                            <td class="px-5 py-4">
+
+                                <input
+                                    type="number"
+                                    min="0"
+                                    max="20"
+                                    value="19"
+                                    class="nota w-16 bg-gray-50 border border-gray-300 rounded-lg p-2 text-center"
+                                    data-row="3">
+
+                            </td>
+
+                            <td
+                                class="px-5 py-4 font-bold promedio"
+                                data-row="3">
+
+                                18.7
+
+                            </td>
+
+                            <td
+                                class="px-5 py-4 estado"
+                                data-row="3">
+
+                                <span
+                                    class="px-2.5 py-1 text-xs font-medium text-green-700 bg-green-100 rounded-full">
+
+                                    Aprobado
+
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+            <div class="flex justify-end mt-5">
+
+                <button
+                    id="guardarNotas"
+                    class="px-5 py-2.5 text-sm font-medium text-white bg-green-600 rounded-lg hover:bg-green-700">
+
+                    Guardar notas
+
+                </button>
+
+            </div>
+
+
+            <div
+                id="mensajeNotas"
+                class="hidden p-4 mt-4 text-sm text-green-800 border border-green-200 rounded-lg bg-green-50">
+
+                ✓ Las notas han sido guardadas correctamente.
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             ASISTENCIA
+        ================================================== -->
+
+        <section
+            data-panel
+            id="v-s4"
+            class="hidden">
+
+            <div class="flex flex-col justify-between gap-4 mb-6 md:flex-row md:items-center">
+
+                <div>
+
+                    <h2 class="text-xl font-bold">
+                        Control de Asistencia
+                    </h2>
+
+                    <p class="mt-1 text-sm text-gray-500">
+                        Registra la asistencia de los estudiantes.
+                    </p>
+
+                </div>
+
+
+                <div class="flex gap-2">
+
+                    <select
+                        class="bg-white border border-gray-300 rounded-lg p-2.5 text-sm">
+
+                        <option>
+                            Base de Datos
+                        </option>
+
+                        <option>
+                            Diseño Web
+                        </option>
+
+                    </select>
+
+
+                    <input
+                        type="date"
+                        value="2026-09-30"
+                        class="bg-white border border-gray-300 rounded-lg p-2.5 text-sm">
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="overflow-x-auto bg-white border rounded-xl shadow-sm">
+
+                <table class="w-full text-sm text-left">
+
+                    <thead class="text-xs uppercase bg-gray-100">
+
+                        <tr>
+
+                            <th class="px-6 py-4">
+                                Código
+                            </th>
+
+                            <th class="px-6 py-4">
+                                Estudiante
+                            </th>
+
+                            <th class="px-6 py-4">
+                                Asistencia
+                            </th>
+
+                            <th class="px-6 py-4">
+                                Observación
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        <tr class="border-b">
+
+                            <td class="px-6 py-4">
+                                2024-001
+                            </td>
+
+                            <td class="px-6 py-4 font-medium">
+                                Ana López
+                            </td>
+
+                            <td class="px-6 py-4">
+
+                                <select
+                                    class="text-sm bg-green-50 border border-green-300 text-green-800 rounded-lg p-2">
+
+                                    <option>
+                                        Presente
+                                    </option>
+
+                                    <option>
+                                        Tardanza
+                                    </option>
+
+                                    <option>
+                                        Falta
+                                    </option>
+
+                                </select>
+
+                            </td>
+
+                            <td class="px-6 py-4">
+
+                                <input
+                                    type="text"
+                                    placeholder="Opcional"
+                                    class="bg-gray-50 border border-gray-300 rounded-lg p-2">
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr class="border-b">
+
+                            <td class="px-6 py-4">
+                                2024-002
+                            </td>
+
+                            <td class="px-6 py-4 font-medium">
+                                Carlos Pérez
+                            </td>
+
+                            <td class="px-6 py-4">
+
+                                <select
+                                    class="text-sm bg-green-50 border border-green-300 text-green-800 rounded-lg p-2">
+
+                                    <option>
+                                        Presente
+                                    </option>
+
+                                    <option>
+                                        Tardanza
+                                    </option>
+
+                                    <option>
+                                        Falta
+                                    </option>
+
+                                </select>
+
+                            </td>
+
+                            <td class="px-6 py-4">
+
+                                <input
+                                    type="text"
+                                    placeholder="Opcional"
+                                    class="bg-gray-50 border border-gray-300 rounded-lg p-2">
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td class="px-6 py-4">
+                                2024-003
+                            </td>
+
+                            <td class="px-6 py-4 font-medium">
+                                María Torres
+                            </td>
+
+                            <td class="px-6 py-4">
+
+                                <select
+                                    class="text-sm bg-green-50 border border-green-300 text-green-800 rounded-lg p-2">
+
+                                    <option>
+                                        Presente
+                                    </option>
+
+                                    <option>
+                                        Tardanza
+                                    </option>
+
+                                    <option>
+                                        Falta
+                                    </option>
+
+                                </select>
+
+                            </td>
+
+                            <td class="px-6 py-4">
+
+                                <input
+                                    type="text"
+                                    placeholder="Opcional"
+                                    class="bg-gray-50 border border-gray-300 rounded-lg p-2">
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+            <div class="flex justify-end mt-5">
+
+                <button
+                    id="guardarAsistencia"
+                    class="px-5 py-2.5 text-sm font-medium text-white bg-green-600 rounded-lg hover:bg-green-700">
+
+                    Guardar asistencia
+
+                </button>
+
+            </div>
+
+
+            <div
+                id="mensajeAsistencia"
+                class="hidden p-4 mt-4 text-sm text-green-800 border border-green-200 rounded-lg bg-green-50">
+
+                ✓ La asistencia ha sido registrada correctamente.
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             HORARIOS
+        ================================================== -->
+
+        <section
+            data-panel
+            id="v-s5"
+            class="hidden">
+
+            <h2 class="mb-2 text-xl font-bold">
+                Horarios
+            </h2>
+
+            <p class="mb-6 text-sm text-gray-500">
+                Horario docente correspondiente al periodo 2026-II.
+            </p>
+
+
+            <div
+                class="overflow-x-auto bg-white border rounded-xl shadow-sm">
+
+                <table class="w-full text-sm text-center">
+
+                    <thead class="text-xs uppercase bg-gray-100">
+
+                        <tr>
+
+                            <th class="px-4 py-4">
+                                Hora
+                            </th>
+
+                            <th class="px-4 py-4">
+                                Lunes
+                            </th>
+
+                            <th class="px-4 py-4">
+                                Martes
+                            </th>
+
+                            <th class="px-4 py-4">
+                                Miércoles
+                            </th>
+
+                            <th class="px-4 py-4">
+                                Jueves
+                            </th>
+
+                            <th class="px-4 py-4">
+                                Viernes
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        <tr class="border-b">
+
+                            <td class="px-4 py-5 font-semibold">
+                                2:00 - 4:00
+                            </td>
+
+                            <td class="px-4 py-5">
+
+                                <div class="p-3 text-green-800 bg-green-100 rounded-lg">
+
+                                    <p class="font-bold">
+                                        Base de Datos
+                                    </p>
+
+                                    <p class="text-xs">
+                                        III-B
+                                    </p>
+
+                                </div>
+
+                            </td>
+
+                            <td class="px-4 py-5">
+
+                                <div class="p-3 text-blue-800 bg-blue-100 rounded-lg">
+
+                                    <p class="font-bold">
+                                        Diseño Web
+                                    </p>
+
+                                    <p class="text-xs">
+                                        III-B
+                                    </p>
+
+                                </div>
+
+                            </td>
+
+                            <td class="px-4 py-5">
+
+                                <div class="p-3 text-purple-800 bg-purple-100 rounded-lg">
+
+                                    <p class="font-bold">
+                                        Sistemas Digitales
+                                    </p>
+
+                                    <p class="text-xs">
+                                        III-B
+                                    </p>
+
+                                </div>
+
+                            </td>
+
+                            <td class="px-4 py-5">
+
+                                <div class="p-3 text-orange-800 bg-orange-100 rounded-lg">
+
+                                    <p class="font-bold">
+                                        Programación
+                                    </p>
+
+                                    <p class="text-xs">
+                                        III-A
+                                    </p>
+
+                                </div>
+
+                            </td>
+
+                            <td class="px-4 py-5 text-gray-400">
+                                —
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td class="px-4 py-5 font-semibold">
+                                4:00 - 6:00
+                            </td>
+
+                            <td class="px-4 py-5 text-gray-400">
+                                —
+                            </td>
+
+                            <td class="px-4 py-5 text-gray-400">
+                                —
+                            </td>
+
+                            <td class="px-4 py-5 text-gray-400">
+                                —
+                            </td>
+
+                            <td class="px-4 py-5 text-gray-400">
+                                —
+                            </td>
+
+                            <td class="px-4 py-5 text-gray-400">
+                                —
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             MIS TRÁMITES
+        ================================================== -->
+
+        <section
+            data-panel
+            id="v-s6"
+            class="hidden">
+
+            <h2 class="mb-6 text-xl font-bold">
+                Mis Trámites
+            </h2>
+
+
+            <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+
+                <div
+                    class="p-5 bg-white border rounded-xl shadow-sm">
+
+                    <div class="flex items-start justify-between">
+
+                        <div>
+
+                            <h3 class="font-bold">
+                                Solicitud de constancia
+                            </h3>
+
+                            <p class="mt-1 text-sm text-gray-500">
+                                15/09/2026
+                            </p>
+
+                        </div>
+
+                        <span
+                            class="px-2.5 py-1 text-xs text-yellow-700 bg-yellow-100 rounded-full">
+
+                            En proceso
+
+                        </span>
+
+                    </div>
+
+
+                    <button
+                        class="mt-4 text-sm font-medium text-green-600 hover:underline">
+
+                        Ver detalle →
+
+                    </button>
+
+                </div>
+
+
+                <div
+                    class="p-5 bg-white border rounded-xl shadow-sm">
+
+                    <div class="flex items-start justify-between">
+
+                        <div>
+
+                            <h3 class="font-bold">
+                                Actualización de datos
+                            </h3>
+
+                            <p class="mt-1 text-sm text-gray-500">
+                                05/09/2026
+                            </p>
+
+                        </div>
+
+                        <span
+                            class="px-2.5 py-1 text-xs text-green-700 bg-green-100 rounded-full">
+
+                            Atendido
+
+                        </span>
+
+                    </div>
+
+
+                    <button
+                        class="mt-4 text-sm font-medium text-green-600 hover:underline">
+
+                        Ver detalle →
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             CENTRO DE IDIOMAS
+        ================================================== -->
+
+        <section
+            data-panel
+            id="v-s7"
+            class="hidden">
+
+            <h2 class="mb-6 text-xl font-bold">
+                Centro de Idiomas
+            </h2>
+
+
+            <div
+                class="grid grid-cols-1 gap-5 md:grid-cols-3">
+
+                <div class="p-6 bg-white border rounded-xl shadow-sm">
+
+                    <p class="text-sm text-gray-500">
+                        Idioma
+                    </p>
+
+                    <p class="mt-2 text-xl font-bold">
+                        Inglés
+                    </p>
+
+                </div>
+
+
+                <div class="p-6 bg-white border rounded-xl shadow-sm">
+
+                    <p class="text-sm text-gray-500">
+                        Nivel
+                    </p>
+
+                    <p class="mt-2 text-xl font-bold">
+                        Avanzado
+                    </p>
+
+                </div>
+
+
+                <div class="p-6 bg-white border rounded-xl shadow-sm">
+
+                    <p class="text-sm text-gray-500">
+                        Estado
+                    </p>
+
+                    <p class="mt-2 text-xl font-bold text-green-600">
+                        Activo
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             BIBLIOTECA
+        ================================================== -->
+
+        <section
+            data-panel
+            id="v-s8"
+            class="hidden">
+
+            <h2 class="mb-2 text-xl font-bold">
+                Biblioteca virtual
+            </h2>
+
+            <p class="mb-6 text-sm text-gray-500">
+                Consulta recursos académicos y materiales de apoyo.
+            </p>
+
+
+            <div
+                class="p-6 mb-6 bg-white border rounded-xl shadow-sm">
+
+                <div class="flex flex-col gap-3 md:flex-row">
+
+                    <input
+                        type="text"
+                        placeholder="Buscar libro, artículo o recurso..."
+                        class="flex-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-2.5">
+
+                    <button
+                        class="px-5 py-2.5 text-sm font-medium text-white bg-green-600 rounded-lg hover:bg-green-700">
+
+                        Buscar
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="grid grid-cols-1 gap-4 md:grid-cols-3">
+
+                <div
+                    class="p-5 bg-white border rounded-xl shadow-sm">
+
+                    
+
+                    <h3 class="mt-3 font-bold">
+                        Ingeniería de Software
+                    </h3>
+
+                    <p class="mt-1 text-sm text-gray-500">
+                        Material de consulta para docentes.
+                    </p>
+
+                    <button
+                        class="mt-4 text-sm font-medium text-green-600 hover:underline">
+
+                        Consultar →
+
+                    </button>
+
+                </div>
+
+
+                <div
+                    class="p-5 bg-white border rounded-xl shadow-sm">
+
+                   
+
+                    <h3 class="mt-3 font-bold">
+                        Programación
+                    </h3>
+
+                    <p class="mt-1 text-sm text-gray-500">
+                        Recursos sobre programación y desarrollo.
+                    </p>
+
+                    <button
+                        class="mt-4 text-sm font-medium text-green-600 hover:underline">
+
+                        Consultar →
+
+                    </button>
+
+                </div>
+
+
+                <div
+                    class="p-5 bg-white border rounded-xl shadow-sm">
+
+                    
+
+                    <h3 class="mt-3 font-bold">
+                        Investigación
+                    </h3>
+
+                    <p class="mt-1 text-sm text-gray-500">
+                        Artículos y materiales de investigación.
+                    </p>
+
+                    <button
+                        class="mt-4 text-sm font-medium text-green-600 hover:underline">
+
+                        Consultar →
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer
+        class="mt-10 p-4 text-center text-xs text-gray-500 border-t bg-white sm:ml-64">
+
+        © 2026 Universidad Nacional de Cañete - SISACADEMICO
+
+    </footer>
+
+
+    <!-- Flowbite -->
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script>
+
+        /* ==========================================
+           CAMBIO DE SECCIONES
+        ========================================== */
+
+        const links = document.querySelectorAll("[data-view]");
+        const panels = document.querySelectorAll("[data-panel]");
+
+        links.forEach(link => {
+
+            link.addEventListener("click", function (e) {
+
+                e.preventDefault();
+
+                const view = this.dataset.view;
+                const title = this.dataset.title;
+
+
+                /* Mostrar panel seleccionado */
+
+                panels.forEach(panel => {
+
+                    panel.classList.toggle(
+                        "hidden",
+                        panel.id !== `v-${view}`
+                    );
+
+                });
+
+
+                /* Cambiar menú activo */
+
+                links.forEach(item => {
+
+                    item.classList.remove(
+                        "bg-green-600",
+                        "text-white"
+                    );
+
+                    item.classList.add(
+                        "text-gray-300"
+                    );
+
+                });
+
+
+                this.classList.remove(
+                    "text-gray-300"
+                );
+
+                this.classList.add(
+                    "bg-green-600",
+                    "text-white"
+                );
+
+
+                /* Cambiar encabezado */
+
+                document.getElementById("title").textContent = title;
+
+                document.getElementById("crumb").textContent = title;
+
+
+                /* Cerrar menú en móvil */
+
+                document
+                    .getElementById("sidebar")
+                    .classList.add("-translate-x-full");
+
+            });
+
+        });
+
+
+        /* ==========================================
+           CÁLCULO AUTOMÁTICO DE PROMEDIOS
+        ========================================== */
+
+        const notas = document.querySelectorAll(".nota");
+
+        notas.forEach(nota => {
+
+            nota.addEventListener("input", function () {
+
+                const row = this.dataset.row;
+
+                const inputs = document.querySelectorAll(
+                    `.nota[data-row="${row}"]`
+                );
+
+                let suma = 0;
+
+                inputs.forEach(input => {
+
+                    suma += Number(input.value) || 0;
+
+                });
+
+
+                const promedio = suma / inputs.length;
+
+
+                const elementoPromedio =
+                    document.querySelector(
+                        `.promedio[data-row="${row}"]`
+                    );
+
+
+                const elementoEstado =
+                    document.querySelector(
+                        `.estado[data-row="${row}"]`
+                    );
+
+
+                elementoPromedio.textContent =
+                    promedio.toFixed(1);
+
+
+                if (promedio >= 14) {
+
+                    elementoEstado.innerHTML = `
+                        <span
+                            class="px-2.5 py-1 text-xs font-medium
+                            text-green-700 bg-green-100 rounded-full">
+                            Aprobado
+                        </span>
+                    `;
+
+                } else {
+
+                    elementoEstado.innerHTML = `
+                        <span
+                            class="px-2.5 py-1 text-xs font-medium
+                            text-red-700 bg-red-100 rounded-full">
+                            Desaprobado
+                        </span>
+                    `;
+
+                }
+
+            });
+
+        });
+
+
+        /* ==========================================
+           GUARDAR NOTAS
+        ========================================== */
+
+        const guardarNotas =
+            document.getElementById("guardarNotas");
+
+        const mensajeNotas =
+            document.getElementById("mensajeNotas");
+
+
+        guardarNotas.addEventListener("click", function () {
+
+            mensajeNotas.classList.remove("hidden");
+
+            setTimeout(() => {
+
+                mensajeNotas.classList.add("hidden");
+
+            }, 3000);
+
+        });
+
+
+        /* ==========================================
+           GUARDAR ASISTENCIA
+        ========================================== */
+
+        const guardarAsistencia =
+            document.getElementById("guardarAsistencia");
+
+        const mensajeAsistencia =
+            document.getElementById("mensajeAsistencia");
+
+
+        guardarAsistencia.addEventListener("click", function () {
+
+            mensajeAsistencia.classList.remove("hidden");
+
+            setTimeout(() => {
+
+                mensajeAsistencia.classList.add("hidden");
+
+            }, 3000);
+
+        });
+
+    </script>
+
+</body>
+
+</html>
